@@ -25,41 +25,6 @@ FlavorPantry is a smart recipe finder app that helps you discover meals you can 
 
 ---
 
-## 📁 Folder Structure
-
-FlavorPantry/
-├── public/
-├── src/
-│ ├── api/ # API utilities
-│ │ └── mealApi.js
-│ ├── assets/ # Static images/icons
-│ ├── components/ # Shared/reusable components
-│ │ └── common/ # UI elements like buttons/tags
-│ ├── pages/ # Route-based views
-│ ├── App.jsx
-│ ├── main.jsx
-│ └── routes.jsx # (Optional)
-├── .github/ # ISSUE_TEMPLATE, PR_TEMPLATE
-│ ├── ISSUE_TEMPLATE/
-│ │ ├── bug_report.md
-│ │ └── feature_request.md
-│ └── PULL_REQUEST_TEMPLATE.md
-├── .eslintrc.js
-├── .prettierrc
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── tailwind.config.js
-├── vite.config.js
-├── package.json
-└── README.md
-
-yaml
-Copy
-Edit
-
----
-
 ## 📦 Installation
 
 ```bash
@@ -67,9 +32,9 @@ git clone https://github.com/your-username/FlavorPantry.git
 cd FlavorPantry
 npm install
 npm run dev
+```
 
-
-💡 Usage
+### Usage
 Go to the home page and click Check Recipes
 
 Add your ingredients one by one
@@ -81,23 +46,12 @@ Scroll to view suggested recipes
 Click any recipe to see full instructions
 
 
-🧑‍💻 Contributing
+## Contributing
 Thank you for considering contributing to FlavorPantry! 🥦🍅
 
-Please follow these steps:
+See [contributing](CONTRIBUTING.md) for more information
 
-🧰 Setup
-bash
-git clone https://github.com/your-username/FlavorPantry.git
-cd FlavorPantry
-npm install
 
-📂 Branching
-Base branch: main
-
-Feature branches: feature/<your-feature-name>
-
-✔️ Commit Format
 
 bash
 git commit -m "feat: add button to clear pantry"
@@ -109,11 +63,12 @@ Link issues using Closes #1
 
 Ensure all checks pass
 
-🤝 Code of Conduct
-Be respectful, inclusive, and kind. See our Code of Conduct.
+### Code of Conduct
+Be sure to check our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 
-🔮 Some ideas for PR's 
+#### Some ideas for PR's 
+```bash
  Add pantry-based search
 
  Recipe card listing
@@ -127,7 +82,8 @@ Be respectful, inclusive, and kind. See our Code of Conduct.
  PWA support
 
  Unit testing with React Testing Library
+```
 
-📃 License
-MIT License. See LICENSE for details.
+#### License
+MIT License. See [LICENSE](LICENSE) for details.
 

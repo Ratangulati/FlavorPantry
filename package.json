@@ -17,11 +17,7 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui",
-    "type-check": "tsc --noEmit",
-    "clean": "rm -rf dist node_modules/.vite",
-    "prepare": "husky install"
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "lucide-react": "^0.525.0",

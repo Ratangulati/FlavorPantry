@@ -1,103 +1,116 @@
-# Contributing Guidelines
+## How to Contribute 🤔
 
-This documentation contains set of guidelines to help you during the contribution process.
+- Make sure you have [Node.js](https://nodejs.org/) installed.
+- Make sure you have [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.
 
-# Submitting Contributions👨🏻‍💻
-Below you will find the process and workflow used to review and merge your changes.
-## 🌟 : Choose an issue/ Create an issue
+### Setup guidelines 🪜
 
-- Look for the existing issue or create your own issue.
-- Comment on the respective issue you would like to work before creating a Pull Request.
-- Wait for the issue to be assigned to you after which you can start working on it.
+Follow these steps to setup FlavorPantry on your local machine
 
-## 🌟 : Fork the repository
+1. [Fork](https://github.com/Ratangulati/FlavorPantry.git) the project
+2. Clone the project to run on your local machine using the following command:
 
-- Fork this repository by clicking on the "Fork" button. This will create a local copy of this respository on your GitHub profile.
+   ```sh
+   git clone https://github.com/<your_github_username>/FlavorPantry.git
+   ```
 
-## 🌟 : Clone the forked repository
+3. Get into the root directory
 
-- Once the repository is forked you need to clone it to your local machine.
-- Click on the "Code" button in the repository page and copy the link provided in the dropdown menu.
-  
+   ```sh
+   cd FlavorPantry
+   ```
 
-```bash
-git clone https://github.com/Ratangulati/FlavorPantry.git
-```
+4. Install all dependencies by running
 
-- Keep a reference to the original project in `upstream` remote.
+   ```sh
+   npm install
+   ```
 
-```bash  
-cd <repo-name>  
-git remote add upstream https://github.com/<upstream-owner>/<repo-name>
-git remote -v # To the check the remotes for this repository
-git pull upstream master # to pull recent changes 
-```  
+5. Create your branch
 
-- If the project is forked already, update the copy before working.
+   ```sh
+   git checkout -b <your_branch_name>
+   ```
 
-```bash
-git remote update
-git checkout <branch-name>
-git rebase upstream/<branch-name>
-``` 
+6. Run and view the application on localhost
 
-## 🌟 : Create a new branch
+   ```sh
+    npm start
+   ```
 
-- Always create a new branch and name it accordingly so as to identify the issue you are addressing.
+> **P.S**: If you have `docker` installed in your system, you can follow these steps to set up the environment:
+>
+> 1. After forking and cloning the repo(as mentioned above), get into the project directory:
+>
+> ```bash
+> cd FlavorPantry/
+> ```
+>
+> 2. Start the docker container with:
+>
+> ```bash
+> docker-compose up
+> ```
+>
+> 3. Now start adding your changes.
+>    **Note:** You don't need to restart the container again and again after starting it once, because the changes you make will reflect in the container instantly.
 
-```bash
-# It will create a new branch with name branch_name and switch to that branch 
-git checkout -b branch_name
-```
-## 🌟 : Work on the issue assigned
+7. Make your changes before staging them.
 
-- Work on the issue(s) assigned to you, make the necessary changes in the files/folders needed.
-- After making the changes add them to the branch you've created.
-  
-```bash  
-# To add all new files to branch Branch_Name  
-git add .  
+8. Stage your changes
 
-# To add only a few files to Branch_Name
-git add <file name>
-```
-## 🌟 : Commit the changes
+   ```sh
+   git add <filename>
+   ```
 
-- Add your commits.
-- Along with the commit give a descriptive message that reflects your changes.
-  
-```bash
-git commit -m "message"  
-```
-- Note : A Pull Request should always have only one commit. 
-  
-## 🌟 : Push the changes
+9. Commit your changes
 
-- Push the committed changes in your branch to your remote repository.
-  
-```bash  
-git push origin branch_name
-```
-## 🌟 : Create a Pull Request
+   ```sh
+   git commit -m "<your-commit-message>"
+   ```
 
-- Go to your repository in the browser and click on compare and pull request.
-- Add a title and description to your pull request that best describes your contribution.
-- After which the pull request will be reviewed and the maintainer will provide the reviews required for the changes.
+10. Push your changes to your branch
 
-If no changes are needed, this means that your Pull Request has been reviewed and will be merged to the original code base by the maintainer.
+    ```sh
+    git push origin "<your_branch_name>"
+    ```
 
-- Note : Always add screenshots to help the maintainer know what this enhancement/implementation is all about.
+11. Create a [PULL REQUEST](https://github.com/Ratangulati/FlavorPantry) 💣
 
-### Need more help?
+    > Click _compare across forks_ if you don't see your branch
 
-You can refer to the following articles on basics of Git and GitHub and also contact the Project Mentors, in case you are stuck:
+---
 
-- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
-- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
-- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
-- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
-- [Complete Git and GitHub Tutorial](https://www.youtube.com/watch?v=apGV9Kg7ics)
+### Alternatively contribute using GitHub Desktop
 
+1. **Open GitHub Desktop:**
+   Launch GitHub Desktop and log in to your GitHub account if you haven't already.
 
+2. **Clone the Repository:**
+   - If you haven't cloned the FlavorPantry repository yet, you can do so by clicking on the "File" menu and selecting "Clone Repository."
+   - Choose the FlavorPantry repository from the list of repositories on GitHub and clone it to your local machine.
 
+3. **Switch to the Correct Branch:**
+   - Ensure you are on the branch that you want to submit a pull request for.
+   - If you need to switch branches, you can do so by clicking on the "Current Branch" dropdown menu and selecting the desired branch.
+
+4. **Make Changes:**
+   Make your changes to the code or files in the repository using your preferred code editor.
+
+5. **Commit Changes:**
+   - In GitHub Desktop, you'll see a list of the files you've changed. Check the box next to each file you want to include in the commit.
+   - Enter a summary and description for your changes in the "Summary" and "Description" fields, respectively. Click the "Commit to <branch-name>" button to commit your changes to the local branch.
+
+6. **Push Changes to GitHub:**
+   After committing your changes, click the "Push origin" button in the top right corner of GitHub Desktop to push your changes to your forked repository on GitHub.
+
+7. **Create a Pull Request:**
+  - Go to the GitHub website and navigate to your fork of the FlavorPantry repository.
+  - You should see a button to "Compare & pull request" between your fork and the original repository. Click on it.
+
+8. **Review and Submit:**
+   - On the pull request page, review your changes and add any additional information, such as a title and description, that you want to include with your pull request.
+   - Once you're satisfied, click the "Create pull request" button to submit your pull request.
+
+9. **Wait for Review:**
+    Your pull request will now be available for review by the project maintainers. They may provide feedback or ask for changes before merging your pull request into the main branch of the FlavorPantry repository.
