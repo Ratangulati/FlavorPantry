@@ -1,0 +1,94 @@
+name: 🎨 Style Request
+description: Suggest UI/UX improvements or design changes
+title: '[Style]: '
+labels: ['enhancement', 'design']
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest design improvements! 🎨
+        
+        Your design ideas help make FlavorPantry more beautiful and user-friendly.
+        
+  - type: textarea
+    id: style-idea
+    attributes:
+      label: 🎨 What's the style improvement?
+      description: Describe the UI/UX change you'd like to see
+      placeholder: Explain what needs to be improved and how
+    validations:
+      required: true
+      
+  - type: textarea
+    id: current-design
+    attributes:
+      label: 📋 Current Design Issue
+      description: What's wrong with the current design?
+      placeholder: Describe the current design problems or limitations
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposed-design
+    attributes:
+      label: 💡 Proposed Design Solution
+      description: How should it look/work instead?
+      placeholder: Describe your proposed design solution
+    validations:
+      required: true
+      
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshots or Mockups
+      description: Add screenshots of current design and/or mockups of proposed changes
+      placeholder: Drag and drop images here or paste URLs
+      
+  - type: dropdown
+    id: design-type
+    attributes:
+      label: 🏷️ Type of Design Change
+      description: What type of design change is this?
+      options:
+        - Layout/Structure
+        - Colors/Theme
+        - Typography
+        - Icons/Images
+        - Animations/Transitions
+        - Responsive Design
+        - Accessibility
+        - Other
+        
+  - type: dropdown
+    id: affected-pages
+    attributes:
+      label: 📄 Which pages are affected?
+      description: Select the pages that would be affected by this change
+      multiple: true
+      options:
+        - Home Page
+        - Recipes Page
+        - All Pages
+        - Navigation
+        - Footer
+        - Components
+        - Other
+        
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✋ Checklist
+      description: Please confirm the following
+      options:
+        - label: I agree to follow this project's [Code of Conduct](https://github.com/yourusername/FlavorPantry/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: I have read the [Contributing Guidelines](https://github.com/yourusername/FlavorPantry/blob/main/CONTRIBUTING.md)
+          required: true
+        - label: I have searched for existing style requests before creating this one
+          required: true
+        - label: I'm a GSSoC contributor
+          required: false
+        - label: I want to work on this issue
+          required: false
