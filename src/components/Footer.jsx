@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center md:text-right">
-        <a href="#" className="hover:underline mx-2">GitHub</a> | <a href="#" className="hover:underline mx-2">Contact</a>
+        <a href="https://github.com/Ratangulati/FlavorPantry" className="hover:underline mx-2">GitHub</a> | <a href="#" className="hover:underline mx-2">Contact</a>
       </div>
     </footer>
   );
