@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.png';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+import { FaSignInAlt, FaSignOutAlt } from'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -13,6 +15,22 @@ const Navbar = () => {
         <span className="w-6 h-[3px] bg-gray-700 mb-1"></span>
         <span className="w-6 h-[3px] bg-gray-700"></span>
       </div>
+         <SignedOut>
+           <SignInButton>
+             <button style={{ display: 'flex', alignItems: 'center', gap: '5px', border: 'none', backgroundColor: '#016630', color: 'white', padding: '5px 10px', borderRadius: '5px', cursor: 'pointer' }}>            <FaSignInAlt style={{ width: '20px', height: '20px' }} />
+            Sign In
+            </button>
+         </SignInButton>
+          </SignedOut>
+         <SignedIn>
+            <UserButton>
+             <button style={{ display: 'flex', alignItems: 'center', gap: '5px', border: 'none', backgroundColor: '#006400', padding: '5px 10px', borderRadius: '5px', cursor: 'pointer' }}>
+                <FaSignOutAlt style={{ width: '20px', height: '20px' }} />
+                 Sign Out
+               </button>
+             </UserButton>
+           </SignedIn>
+
     </nav>
   );
 };
