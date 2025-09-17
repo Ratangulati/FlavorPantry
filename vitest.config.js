@@ -94,7 +94,7 @@ afterEach(() => {
 
 // src/test/utils.jsx - Testing utilities
 import React from 'react'
-import { render } from '@testing-library/react'
+// import { render } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
 
 // Custom render function that includes providers
@@ -143,10 +143,10 @@ export const mockFetchError = () => {
 // Example test files:
 
 // src/components/__tests__/Navbar.test.jsx
-import { describe, it, expect } from 'vitest'
+import { describe, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { renderWithRouter } from '../../test/utils'
-import Navbar from '../Navbar'
+import Navbar from '../FlavorPantry/src/components/Navbar.jsx'
 
 describe('Navbar Component', () => {
   it('renders logo and brand name', () => {
@@ -165,10 +165,10 @@ describe('Navbar Component', () => {
 })
 
 // src/components/__tests__/Hero.test.jsx  
-import { describe, it, expect, vi } from 'vitest'
+import {  expect } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { renderWithRouter } from '../../test/utils'
-import Hero from '../Hero'
+import Hero from '../FlavorPantry/src/components/Hero.jsx'
 
 // Mock useNavigate
 const mockNavigate = vi.fn()
@@ -203,8 +203,8 @@ import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderWithRouter } from '../../test/utils'
-import { mockFetch, mockApiResponse } from '../../test/mocks/api'
-import Recipes from '../Recipes'
+// import { mockFetch, mockApiResponse } from '../../test/mocks/api'
+import Recipes from '../FlavorPantry/src/pages/Recipes.jsx'
 
 describe('Recipes Page', () => {
   beforeEach(() => {

@@ -53,8 +53,22 @@ See [contributing](CONTRIBUTING.md) for more information
 
 
 
-bash
-git commit -m "feat: add button to clear pantry"
+### Quality checks
+
+- Lint: `npm run lint`
+- Format: `npm run format` / check `npm run format:check`
+- Tests: `npm test` or with coverage `npm run test:coverage`
+- All checks (local/CI): `npm run ci:checks`
+
+Husky pre-commit runs `lint-staged` to auto-fix and format staged files.
+
+### CI/CD
+
+- GitHub Actions CI runs on PRs and on pushes to `main`:
+  - Install, Lint, Format Check, Test (with coverage), and Build
+  - Coverage artifacts are uploaded
+- Optional Vercel Preview deploy workflow posts a preview URL when secrets are configured:
+  - `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`
 
 📢 Pull Requests
 Write a descriptive title and body

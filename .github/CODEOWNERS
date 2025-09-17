@@ -1,0 +1,6 @@
+# CODEOWNERS allows automatic review requests on PRs
+# Learn more: https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @ratangulati
+
+
