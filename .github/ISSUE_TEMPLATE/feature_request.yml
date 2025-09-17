@@ -1,16 +1,16 @@
 name: ✨ Feature Request
 description: Suggest an idea for this project
-title: "[Feature]: "
-labels: ["enhancement", "needs-triage"]
+title: '[Feature]: '
+labels: ['enhancement', 'needs-triage']
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to suggest a new feature! ✨
-        
+
         Your ideas help make FlavorPantry better for everyone.
-        
+
   - type: textarea
     id: feature-description
     attributes:
@@ -19,7 +19,7 @@ body:
       placeholder: Describe your feature idea in detail
     validations:
       required: true
-      
+
   - type: textarea
     id: problem-solving
     attributes:
@@ -28,7 +28,7 @@ body:
       placeholder: Describe the problem or need this feature addresses
     validations:
       required: true
-      
+
   - type: textarea
     id: proposed-solution
     attributes:
@@ -37,14 +37,14 @@ body:
       placeholder: Describe your ideal implementation
     validations:
       required: true
-      
+
   - type: textarea
     id: alternatives
     attributes:
       label: 🔄 Alternatives Considered
       description: Have you considered any alternative solutions?
       placeholder: Describe any alternative solutions you've thought about
-      
+
   - type: dropdown
     id: feature-type
     attributes:
@@ -57,7 +57,7 @@ body:
         - Accessibility
         - Documentation
         - Other
-        
+
   - type: dropdown
     id: priority
     attributes:
@@ -68,14 +68,14 @@ body:
         - Medium - Would be helpful
         - High - Important for usability
         - Critical - Blocking current workflow
-        
+
   - type: textarea
     id: additional-context
     attributes:
       label: 📎 Additional Context
       description: Add any other context, mockups, or examples about the feature request
       placeholder: Screenshots, links, examples, etc.
-      
+
   - type: checkboxes
     id: terms
     attributes:

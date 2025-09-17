@@ -1,6 +1,8 @@
 # 📦 FlavorPantry
 
-FlavorPantry is a smart recipe finder app that helps you discover meals you can cook with the ingredients already in your kitchen. Built with **React**, **Vite**, and **Tailwind CSS**, and powered by the **TheMealDB API**.
+FlavorPantry is a smart recipe finder app that helps you discover meals you can cook with the
+ingredients already in your kitchen. Built with **React**, **Vite**, and **Tailwind CSS**, and
+powered by the **TheMealDB API**.
 
 ---
 
@@ -35,6 +37,7 @@ npm run dev
 ```
 
 ### Usage
+
 Go to the home page and click Check Recipes
 
 Add your ingredients one by one
@@ -45,13 +48,11 @@ Scroll to view suggested recipes
 
 Click any recipe to see full instructions
 
-
 ## Contributing
+
 Thank you for considering contributing to FlavorPantry! 🥦🍅
 
 See [contributing](CONTRIBUTING.md) for more information
-
-
 
 ### Quality checks
 
@@ -70,18 +71,18 @@ Husky pre-commit runs `lint-staged` to auto-fix and format staged files.
 - Optional Vercel Preview deploy workflow posts a preview URL when secrets are configured:
   - `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`
 
-📢 Pull Requests
-Write a descriptive title and body
+📢 Pull Requests Write a descriptive title and body
 
 Link issues using Closes #1
 
 Ensure all checks pass
 
 ### Code of Conduct
+
 Be sure to check our [Code of Conduct](CODE_OF_CONDUCT.md)
 
+#### Some ideas for PR's
 
-#### Some ideas for PR's 
 ```bash
  Add pantry-based search
 
@@ -99,5 +100,5 @@ Be sure to check our [Code of Conduct](CODE_OF_CONDUCT.md)
 ```
 
 #### License
-MIT License. See [LICENSE](LICENSE) for details.
 
+MIT License. See [LICENSE](LICENSE) for details.

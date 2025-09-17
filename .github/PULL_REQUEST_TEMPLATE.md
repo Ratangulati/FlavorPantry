@@ -23,8 +23,7 @@ Briefly describe the changes in this PR.
 
 ## Linked issues
 
-Fixes #
-Related to #
+Fixes # Related to #
 
 ## Additional context
 
@@ -34,7 +33,8 @@ Add any other context about the PR here.
 
 ## Description
 
-Please include a summary of the change and which issue is fixed. Also include relevant motivation and context.
+Please include a summary of the change and which issue is fixed. Also include relevant motivation
+and context.
 
 Fixes # (issue)
 
@@ -62,4 +62,4 @@ _Please include screenshots of UI changes if applicable._
 
 ---
 
-> Thank you for contributing to  FlavorPantry! 🍽️
+> Thank you for contributing to FlavorPantry! 🍽️
