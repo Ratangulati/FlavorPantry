@@ -28,10 +28,13 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.7.1"
+    "react-router-dom": "^7.7.1",
+    "react-toastify": "^11.0.5",
+    "toastify": "^2.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
