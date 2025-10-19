@@ -9,9 +9,9 @@ body:
     attributes:
       value: |
         Thanks for taking the time to suggest design improvements! 🎨
-        
+
         Your design ideas help make FlavorPantry more beautiful and user-friendly.
-        
+
   - type: textarea
     id: style-idea
     attributes:
@@ -20,7 +20,7 @@ body:
       placeholder: Explain what needs to be improved and how
     validations:
       required: true
-      
+
   - type: textarea
     id: current-design
     attributes:
@@ -29,7 +29,7 @@ body:
       placeholder: Describe the current design problems or limitations
     validations:
       required: true
-      
+
   - type: textarea
     id: proposed-design
     attributes:
@@ -38,14 +38,14 @@ body:
       placeholder: Describe your proposed design solution
     validations:
       required: true
-      
+
   - type: textarea
     id: screenshots
     attributes:
       label: 📷 Screenshots or Mockups
       description: Add screenshots of current design and/or mockups of proposed changes
       placeholder: Drag and drop images here or paste URLs
-      
+
   - type: dropdown
     id: design-type
     attributes:
@@ -60,7 +60,7 @@ body:
         - Responsive Design
         - Accessibility
         - Other
-        
+
   - type: dropdown
     id: affected-pages
     attributes:
@@ -75,7 +75,7 @@ body:
         - Footer
         - Components
         - Other
-        
+
   - type: checkboxes
     id: terms
     attributes:
